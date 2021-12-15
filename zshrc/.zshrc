@@ -8,6 +8,7 @@ alias cd-b2="cd ~/My\ Drive/Desktop\ Backup/Code/belkapp-2"
 # GIT
 alias st="git status"
 alias pullm="git pull origin master"
+alias pushm="git push origin master"
 
 # HEROKU
 alias herokup="git push heroku-prod master"
