@@ -3,7 +3,8 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # DIRECTORIES
-alias cd-b2="cd ~/My\ Drive/Desktop\ Backup/Code/belkapp-2"
+alias cdb2="cd ~/My\ Drive/Desktop\ Backup/Code/belkapp/belkapp-2"
+alias cdobey="cd ~/My\ Drive/Desktop\ Backup/Code/obey/obey-us"
 
 # GIT
 alias st="git status"
@@ -12,6 +13,7 @@ alias pushm="git push origin master"
 
 # HEROKU
 alias herokup="git push heroku-prod master"
+alias htb2="heroku logs --tail -a belkapp2-prod"
 
 # MEMCACHED
 alias mem8="memcached -p 8000"
