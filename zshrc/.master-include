@@ -1,0 +1,6 @@
+FILE=~/My\ Drive/Desktop\ Backup/Code/laptop-config/zshrc/.zshrc
+if [ -f $FILE ]; then
+    source $FILE
+else
+    print "404: .zshrc file config alias not found."
+fi

@@ -3,6 +3,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # DIRECTORIES
+alias cdcode="cd ~/My\ Drive/Desktop\ Backup/Code"
 alias cdb2="cd ~/My\ Drive/Desktop\ Backup/Code/belkapp/belkapp-2"
 alias cdobey="cd ~/My\ Drive/Desktop\ Backup/Code/obey/obey-us"
 
@@ -10,6 +11,7 @@ alias cdobey="cd ~/My\ Drive/Desktop\ Backup/Code/obey/obey-us"
 alias st="git status"
 alias pullm="git pull origin master"
 alias pushm="git push origin master"
+alias fix="git diff --name-only | uniq | xargs code"
 
 # HEROKU
 alias herokup="git push heroku-prod master"
