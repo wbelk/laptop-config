@@ -1,4 +1,6 @@
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin" 
+# code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+export EDITOR=code
 
 # NVM - M1
 # export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
@@ -16,7 +18,7 @@ alias cdobey="cd ~/My\ Drive/Desktop\ Backup/Code/obey/obey-us"
 alias st="git status"
 alias pullm="git pull origin master"
 alias pushm="git push origin master"
-alias fix="git diff --name-only | uniq | xargs code"
+alias fix="git diff --name-only | uniq | xargs $EDITOR"
 
 # HEROKU
 alias herokup="git push heroku-prod master"
