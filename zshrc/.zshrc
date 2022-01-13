@@ -16,8 +16,10 @@ alias cdobey="cd ~/My\ Drive/Desktop\ Backup/Code/obey/obey-us"
 
 # GIT
 alias st="git status"
-alias pullm="git pull origin master"
-alias pushm="git push origin master"
+alias pullmaster="git pull origin master"
+alias pushmaster="git push origin master"
+alias pullmain="git pull origin main"
+alias pushmain="git push origin main"
 alias fix="git diff --name-only | uniq | xargs $EDITOR"
 
 # HEROKU
