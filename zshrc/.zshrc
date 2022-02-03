@@ -25,6 +25,8 @@ alias pushmain="git push origin main"
 alias fix="git diff --name-only | uniq | xargs $EDITOR"
 
 # HEROKU
+alias ht="heroku logs --tail"
+alias herokum="git push heroku master"
 alias herokup="git push heroku-prod master"
 alias htb2="heroku logs --tail -a belkapp2-prod"
 
