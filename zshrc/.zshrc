@@ -10,9 +10,9 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 # DIRECTORIES
-alias cdcode="cd ~/My\ Drive/Desktop\ Backup/Code"
-alias cdb2="cd ~/My\ Drive/Desktop\ Backup/Code/belkapp/belkapp-2"
-alias cdobey="cd ~/My\ Drive/Desktop\ Backup/Code/obey/obey-us"
+alias cdcode="cd ~/Dropbox/Laptop\ Backup/Code"
+alias cdb2="cd ~/Dropbox/Laptop\ Backup/Code/belkapp/belkapp-2"
+alias cdobey="cd ~/Dropbox/Laptop\ Backup/Code/obey/obey-us"
 
 # GIT
 alias st="git status"

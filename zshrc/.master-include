@@ -1,4 +1,4 @@
-FILE=~/My\ Drive/Desktop\ Backup/Code/laptop-config/zshrc/.zshrc
+FILE=~/Dropbox/Laptop\ Backup/Code/laptop-config/zshrc/.zshrc
 if [ -f $FILE ]; then
     source $FILE
 else
