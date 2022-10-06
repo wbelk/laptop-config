@@ -30,12 +30,18 @@ alias herokum="git push heroku master"
 alias herokup="git push heroku-prod master"
 alias htb2="heroku logs --tail -a belkapp2-prod"
 
+## AWS
+alias cdaws="cd ~/Dropbox/Laptop\ Backup/Code/aws"
+alias sshb2web="ssh -i \"EC2 2022-06-17.pem\" ubuntu@ec2-3-15-30-210.us-east-2.compute.amazonaws.com"
+alias sshb2worker="ssh -i \"EC2 2022-06-17.pem\" ubuntu@ec2-3-137-223-29.us-east-2.compute.amazonaws.com"
+
+
 # MEMCACHED
 alias mem8="memcached -p 8000"
 
 # NGROK
-alias ng3="ngrok http -subdomain=belk 3000"
-alias ng4="ngrok http -subdomain=belk2 4000"
+alias ng3="ngrok http --subdomain=belk 3000"
+alias ng4="ngrok http --subdomain=belk2 4000"
 
 # TMUX
 alias tmuxb="tmuxinator start belkapp"
