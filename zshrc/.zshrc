@@ -32,9 +32,11 @@ alias htb2="heroku logs --tail -a belkapp2-prod"
 
 ## AWS
 alias cdaws="cd ~/Dropbox/Laptop\ Backup/Code/aws"
-alias sshb2web="ssh -i \"EC2 2022-06-17.pem\" ubuntu@ec2-3-15-30-210.us-east-2.compute.amazonaws.com"
-alias sshb2worker="ssh -i \"EC2 2022-06-17.pem\" ubuntu@ec2-3-137-223-29.us-east-2.compute.amazonaws.com"
-alias sshb2scraper="ssh -i \"EC2 2022-06-17.pem\" ubuntu@ec2-18-116-45-126.us-east-2.compute.amazonaws.com"
+alias sshb2web="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-140-247-206.us-east-2.compute.amazonaws.com"
+alias sshb2worker="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-52-14-66-57.us-east-2.compute.amazonaws.com"
+alias sshb2scraper="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-12-163-192.us-east-2.compute.amazonaws.com"
+alias sshpdweb="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-143-236-3.us-east-2.compute.amazonaws.com"
+alias sshpdscraper="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-16-162-186.us-east-2.compute.amazonaws.com"
 
 
 # MEMCACHED
