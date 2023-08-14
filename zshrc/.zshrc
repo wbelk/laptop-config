@@ -2,6 +2,12 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 # code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 export EDITOR=code
 
+# RUBY HOMEBREW
+if [ -d "/usr/local/opt/ruby/bin" ]; then
+  export PATH=/usr/local/opt/ruby/bin:$PATH
+  export PATH=`gem environment gemdir`/bin:$PATH
+fi
+
 # NVM - M1
 # export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -16,13 +22,14 @@ alias cdobey="cd ~/Dropbox/Laptop\ Backup/Code/obey/obey-us"
 
 # GIT
 alias st="git status"
-alias pullm="git pull origin master"
-alias pushm="git push origin master"
-alias pullmaster="git pull origin master"
-alias pushmaster="git push origin master"
-alias pullmain="git pull origin main"
-alias pushmain="git push origin main"
-alias fix="git diff --name-only | uniq | xargs $EDITOR"
+# alias fix="git diff --name-only | uniq | xargs $EDITOR"
+ck() { git checkout "$1"; }
+merge() { git merge "$1"; }
+push() { git push origin "$1"; }
+pull() { git pull origin "$1"; }
+
+#STANDARD
+fix() { standard --fix "$1"; }
 
 # HEROKU
 alias ht="heroku logs --tail"
@@ -32,10 +39,10 @@ alias htb2="heroku logs --tail -a belkapp2-prod"
 
 ## AWS
 alias cdaws="cd ~/Dropbox/Laptop\ Backup/Code/aws"
-alias sshb2web="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-140-247-206.us-east-2.compute.amazonaws.com"
+alias sshb2web="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-142-236-6.us-east-2.compute.amazonaws.com"
 alias sshb2worker="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-52-14-66-57.us-east-2.compute.amazonaws.com"
 alias sshb2scraper="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-12-163-192.us-east-2.compute.amazonaws.com"
-alias sshpdweb="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-143-236-3.us-east-2.compute.amazonaws.com"
+alias sshpdweb="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-141-11-167.us-east-2.compute.amazonaws.com"
 alias sshpdscraper="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-15-201-216.us-east-2.compute.amazonaws.com"
 
 
