@@ -44,11 +44,10 @@ alias sshb2web="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-18-117-106-182.us-east-2
 alias sshb2worker="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-147-68-19.us-east-2.compute.amazonaws.com"
 alias sshb2webhooks="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-22-27-139.us-east-2.compute.amazonaws.com"
 alias sshb2monitor="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-18-188-236-7.us-east-2.compute.amazonaws.com"
-alias sshb2scraper="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-143-255-147.us-east-2.compute.amazonaws.com"
+alias sshb2scraper="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-18-220-247-175.us-east-2.compute.amazonaws.com"
 alias sshb2mem="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-13-59-252-226.us-east-2.compute.amazonaws.com"
 alias sshpdweb="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-18-216-141-57.us-east-2.compute.amazonaws.com"
 alias sshpdscraper="ssh -i \"EC2 2022-06-17.pem\" admin@ec2-3-15-201-216.us-east-2.compute.amazonaws.com"
-
 
 # MEMCACHED
 alias mem8="memcached -p 8000"
